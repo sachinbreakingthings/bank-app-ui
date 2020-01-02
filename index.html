@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var colorArray = [
+                '#12A480', '#D51270', '#C12020', '#C89517', '#E25A2C', '#1180AA', '#FBBB1A'
+            ];
+            var i = 0;
+            $('li.list').each(function () {
+                $(this).css('border-left-color', colorArray[i]);
+                i = (i + 1) % colorArray.length;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-container">
+            <a href="#default" class="logo"></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-container-header">
+                <img class="icon" src="./assets/icons/refresh_new.png">
+                Make a Transfer
+            </div>
+            <form>
+                FROM ACCOUNT<br>
+                <input type="text" name="from-account" placeholder="Enter Your Account Number">
+                <br>
+                TO ACCOUNT<br>
+                <input type="text" name="lastname" placeholder="Enter Recivers Account Number">
+                <br>
+                AMOUNT<br>
+                <input type="text" name="lastname" placeholder="$ 0.00">
+                <br><br>
+                <button class="submit-btn" type="button" onclick="">SUBMIT</button>
+            </form>
+        </div>
+        <div class="history-container">
+            <div class="history-container-header">
+                <img class="icon" icon src="./assets/icons/briefcase_new.png">
+                Recent Trasactions
+            </div>
+            <div class="history-container-body">
+                <div class="sub-nav">
+                    <input class="search-term" type="text" name="search" placeholder="Search by typing">
+                    <div class="sort-filters">
+                        <span>Sort by</span>
+                        <button type="button" onclick="">DATE<div class="arrow-down"></div></button>
+                        <button type="button" onclick="">BENEFICIARY</button>
+                        <button type="button" onclick="">AMOUNT</button>
+                    </div>
+                </div>
+                <div class="history-list">
+                    <ul>
+                        <li class="list">
+                            <div class="tr-date">Oct. 19</div>
+                            <div class="tr-details">
+                                <div class="tr-name">Tea Lounge</div>
+                                <div class="tr-type">Card Payment</div>
+                            </div>
+                            <div class="tr-amount">-$82.2</div>
+                        </li>
+                        <li class="list">
+                            <div class="tr-date">Oct. 19</div>
+                            <div class="tr-details">
+                                <div class="tr-name">Tea Lounge</div>
+                                <div class="tr-type">Card Payment</div>
+                            </div>
+                            <div class="tr-amount">-$82.2</div>
+                        </li>
+                        <li class="list">
+                            <div class="tr-date">Oct. 19</div>
+                            <div class="tr-details">
+                                <div class="tr-name">Tea Lounge</div>
+                                <div class="tr-type">Card Payment</div>
+                            </div>
+                            <div class="tr-amount">-$82.2</div>
+                        </li>
+                        <li class="list">
+                            <div class="tr-date">Oct. 19</div>
+                            <div class="tr-details">
+                                <div class="tr-name">Tea Lounge</div>
+                                <div class="tr-type">Card Payment</div>
+                            </div>
+                            <div class="tr-amount">-$82.2</div>
+                        </li>
+                        <li class="list">
+                            <div class="tr-date">Oct. 19</div>
+                            <div class="tr-details">
+                                <div class="tr-name">Tea Lounge</div>
+                                <div class="tr-type">Card Payment</div>
+                            </div>
+                            <div class="tr-amount">-$82.2</div>
+                        </li>
+                        <li class="list">
+                            <div class="tr-date">Oct. 19</div>
+                            <div class="tr-details">
+                                <div class="tr-name">Tea Lounge</div>
+                                <div class="tr-type">Card Payment</div>
+                            </div>
+                            <div class="tr-amount">-$82.2</div>
+                        </li>
+                        <li class="list">
+                            <div class="tr-date">Oct. 19</div>
+                            <div class="tr-details">
+                                <div class="tr-name">Tea Lounge</div>
+                                <div class="tr-type">Card Payment</div>
+                            </div>
+                            <div class="tr-amount">-$82.2</div>
+                        </li>
+                        <li class="list">
+                            <div class="tr-date">Oct. 19</div>
+                            <div class="tr-details">
+                                <div class="tr-name">Tea Lounge</div>
+                                <div class="tr-type">Card Payment</div>
+                            </div>
+                            <div class="tr-amount">-$82.2</div>
+                        </li>
+                        <li class="list">
+                            <div class="tr-date">Oct. 19</div>
+                            <div class="tr-details">
+                                <div class="tr-name">Tea Lounge</div>
+                                <div class="tr-type">Card Payment</div>
+                            </div>
+                            <div class="tr-amount">-$82.2</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
